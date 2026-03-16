@@ -14,7 +14,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(cors());
 
 // MongoDB database
-mongoose.connect("mongodb://127.0.0.1:27017/fitness-tracker");
+mongoose.connect("mongodb+srv://admin:admin@batch593.fscmxoj.mongodb.net/?fitness-tracker=Batch593");
 
 mongoose.connection.once('open', () => {
     console.log('Now connected to MongoDB');
